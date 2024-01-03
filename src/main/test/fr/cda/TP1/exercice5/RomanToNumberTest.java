@@ -17,8 +17,6 @@ public class RomanToNumberTest {
     @DisplayName("Usage normal de la methode convertirNombreRomainEnNombreArabe")
     public void testconvertirNombreRomainEnNombreArabe() {
 
-        RomanToNumber romanToNumber = new RomanToNumber();
-
         int result = romanToNumber.convertirNombreRomainEnNombreArabe("XXIV");
         int expected = 24;
 
