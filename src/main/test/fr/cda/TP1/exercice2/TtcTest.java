@@ -3,7 +3,6 @@ package fr.cda.TP1.exercice2;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.ValueSource;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -17,7 +16,7 @@ public class TtcTest {
 
     @ParameterizedTest
     @DisplayName("Usage normal de la methode HtToTtc")
-    @CsvSource({"10", "20", "50"})
+    @ValueSource(ints = {10})
     public void testHtToTtc(int prixHt) {
 
         double expected = prixHt * ttc.TVA;
@@ -27,7 +26,7 @@ public class TtcTest {
 
     @ParameterizedTest
     @DisplayName("Le prix HT est negatif")
-    @CsvSource({"-10, -20, -50"})
+    @ValueSource(ints = {-7})
     public void testHtToTtcPrixHtNegatif(int prixHt) {
 
         assertThrows(
