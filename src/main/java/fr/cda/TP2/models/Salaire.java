@@ -20,7 +20,7 @@ public class Salaire {
      * @param  heuresTravaillees the number of hours worked
      * @return the calculated salary
      */
-    public double payer(int heuresTravaillees) {
+    public double payer(double heuresTravaillees) {
         double salaire = 0;
         if (heuresTravaillees <= 151.67) {
             salaire = tauxHoraire * heuresTravaillees;
