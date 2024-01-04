@@ -27,7 +27,7 @@ class IdentiteTest {
         Adresse expected = new Adresse(
                 "Residence du test",
                 "Rue du test",
-                59100,
+                59000,
                 "Lille",
                 "France");
         Adresse actual = identite.getAdresse();
