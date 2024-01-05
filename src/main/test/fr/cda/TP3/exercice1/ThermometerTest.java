@@ -14,4 +14,14 @@ public class ThermometerTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    public void arrayWithPositivesReturnsClosestToZero() {
+
+        Thermometer thermometer = new Thermometer();
+        int expected = 1;
+        int actual = thermometer.closestToZero(new int[] {1, 2, 3});
+        assertEquals(expected,actual);
+    }
+
+
 }
