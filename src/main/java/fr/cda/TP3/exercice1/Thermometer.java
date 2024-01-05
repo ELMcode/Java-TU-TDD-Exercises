@@ -7,6 +7,14 @@ public class Thermometer {
         if (temperatures.length == 0) {
             return 0;
         }
-        return 0;
+
+        int closest = temperatures[0];
+
+        for (int temp : temperatures) {
+            if (Math.abs(temp) < Math.abs(closest)) {
+                closest = temp;
+            }
+        }
+        return closest;
     }
 }
