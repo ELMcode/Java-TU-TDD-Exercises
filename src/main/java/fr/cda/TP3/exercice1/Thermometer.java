@@ -11,7 +11,7 @@ public class Thermometer {
         int closest = temperatures[0];
 
         for (int temp : temperatures) {
-            if (Math.abs(temp) < Math.abs(closest)) {
+            if (Math.abs(temp) < Math.abs(closest) || (Math.abs(temp)) == (Math.abs(closest)) && temp > 0){
                 closest = temp;
             }
         }
