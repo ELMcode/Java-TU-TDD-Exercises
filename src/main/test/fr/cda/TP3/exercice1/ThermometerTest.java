@@ -1,7 +1,17 @@
 package fr.cda.TP3.exercice1;
 
+import org.junit.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class ThermometerTest {
+
+    @Test
+    public void arrayEmptyReturn0() {
+
+        Thermometer thermometer = new Thermometer();
+        int expected = 0;
+        int actual = thermometer.closestToZero(new int[] {});
+        assertEquals(expected, actual);
+    }
 
 }
